@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    height: 85px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.header__logoDiv {
+    width: 80px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__logo {
+    width: 60px;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: auto;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+
+    /* flex-wrap: nowrap; */
+}
+
+.header__searchIcon,
+.header__sidebarIcon {
+    color: white;
+}
+
+.header__sidebarIcon {
+    margin-right: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+
+    .header__title,
+    .header__searchIcon,
+    .header__sidebarIcon {
+        text-align: center;
+    }
+
+    .header__title {
+        display: flex;
+        /* flex-wrap: nowrap; */
+
+
+    }
+}
+
+.header__submitButton>Button {
+    background-color: #000000;
+    border: 1px solid white;
+    color: white;
+}
+
+.header__signinButton>Button {
+    background-color: #4C5FD5;
+    border: 1px solid white;
+    color: white;
+}
+
+
+.header__submitButton,
+.header__signinButton {
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1200px) {
+
+    .header__searchIcon,
+    .header__sidebarIcon {
+        display: none;
+    }
+
+    .header__logoDiv {
+        margin-left: 80px;
+    }
+
+    .header__title {
+        display: flex;
+        /* flex-wrap: nowrap; */
+    }
+
+    .header__signinButton {
+        margin-right: 90px;
+    }
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .header__submitButton>Button,
+    .header__signinButton>Button {
+        display: none;
+    }
+
+    .header__submitButton,
+    .header__signinButton {
+        display: none;
+    }
+
+    .header__title {
+        display: flex;
+        /* flex-wrap: nowrap; */
+    }
+}
